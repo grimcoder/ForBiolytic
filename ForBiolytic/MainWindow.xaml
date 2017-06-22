@@ -1,0 +1,29 @@
+﻿<Window x:Class="ForBiolytic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ForBiolytic"
+        mc:Ignorable="d"
+        Title="For Biolytics" Height="350" Width="525">
+
+
+    <Grid>
+        <ListBox ItemsSource="{Binding Entries}" 
+                 SelectedItem="{Binding SelectedEntry}" 
+                 HorizontalAlignment="Left" Height="274" 
+                 Margin="20,23,0,0" VerticalAlignment="Top" Width="258"/>
+
+        <Button  Command="{Binding AddItem}" Content="Add" 
+                 HorizontalAlignment="Left" Margin="299,23,0,0" 
+                 VerticalAlignment="Top" Width="75"/>
+
+        <Button Command="{Binding RemoveItem}" Content="Remove" 
+                HorizontalAlignment="Left" Margin="299,53,0,0" 
+                VerticalAlignment="Top" Width="75"/>
+
+
+    </Grid>
+
+
+</Window>
