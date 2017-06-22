@@ -40,7 +40,7 @@ namespace ForBiolytic
         private void ComposeObjects()
         {
             Current.MainWindow = this.container.Get<MainWindow>();
-            Current.MainWindow.Title = "DI with Ninject";
+            Current.MainWindow.Title = "For biolytics";
         }
 
         #endregion
